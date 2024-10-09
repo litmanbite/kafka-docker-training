@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-StrProducerApplication<str-producer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.kafka.str_producer.StrProducerApplication",
+            "projectName": "str-producer",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
