@@ -17,8 +17,9 @@ public class StringProducerService {
 
     public void sendMsg(String msg) {
         // Envia a mensagem e obtém um CompletableFuture
+        log.info("The msg {}",msg);
         CompletableFuture<SendResult<String, String>> future = template.send("str-topic", msg);
-
+/*
         future.thenAccept(result -> {
             // Log de sucesso
             log.info("Sent message [{}] with offset [{}]", msg, result.getRecordMetadata().offset());//offset é a linha no kafdrop
@@ -27,8 +28,8 @@ public class StringProducerService {
             log.error("Unable to send message [{}] due to: {}", msg, err.getMessage(), err);
             return null; // Retorna null para encadear
         });
-    }
-}
+    }*/
+}}
 
 
 
